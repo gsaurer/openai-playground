@@ -16,7 +16,7 @@ assistant = client.beta.assistants.create(
 vector_store = client.beta.vector_stores.create(name="Financial Statements")
 
 # Ready the files for upload to OpenAI
-file_paths = ["testfiles/gerd.txt", "testfiles/enikoe.txt"]
+file_paths = ["testfiles/Person1.txt", "testfiles/Person2.txt"]
 file_streams = [open(path, "rb") for path in file_paths]
 
 # Use the upload and poll SDK helper to upload the files, add them to the vector store,
